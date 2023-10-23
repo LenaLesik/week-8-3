@@ -1,0 +1,126 @@
+
+
+$primary-color: #5222D0;
+$font-stack: 'Roboto';
+
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+
+.header {
+    
+    height: 10vh;
+    width: 100vw;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    .logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+    }
+
+    .header__cart {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        
+        width: 30%;
+        justify-self: center;
+        border-radius: 100px;
+        width: 115px;
+        background-color: $primary-color;
+        font-family: $font-stack;
+        font-size: 13px;
+
+        #header__cart {
+            padding-left: 3px;
+        }
+    }
+}
+
+.main {
+    grid-row: 2/3;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-self: center;
+    align-self: center;
+    
+
+    .main__section {
+        justify-self: center;
+        align-self: center;
+        display: grid;
+        
+        .main__buy {
+            grid-column: 1/2;
+            background-color: $primary-color;
+            width: 270px;
+            height: 84px;
+            border-radius: 100px;
+            
+            font-family: $font-stack;
+            font-size: 35px;
+            justify-self: center;
+            align-items: center;
+        }
+    
+    }
+    .main__header {
+        grid-column: 1/2;
+        display: flex;
+        
+        font-family: $font-stack;
+        font-size: 60px;
+        text-align: center;
+        
+    }
+
+    .main__description {
+        grid-column: 1/2;
+        font-family: $font-stack;
+        display: flex;
+        font-size: 20px;
+        
+        align-self: flex-end;
+        justify-self: center;
+        width: 40vw;
+    }
+
+    
+    .main__bg-image {
+        grid-column: 2/3;
+        justify-self: center;
+        align-self: center;
+        
+        max-width: min-content;
+    }
+}
+
+.footer {
+    grid-row: 3/4;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    .footer__item {
+        
+        margin: 20px;
+        font-family: $font-stack;
+        font-size: 20px;
+        
+    }
+}
+
+:link {
+    text-decoration: none;
+    color: $primary-color;
+}
+
